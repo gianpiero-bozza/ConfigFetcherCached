@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ConfigFetcherCached</string>
+    <string name="external_config_file_key">EXTERNAL_CONFIG</string>
+    <string name="external_config_content_empty_default">DEFAULT_EMPTY_CONFIG</string>
+    <string name="external_config_content_key">EXTERNAL_CONFIG_CONTENT_KEY</string>
+</resources>
