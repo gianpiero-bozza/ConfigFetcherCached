@@ -36,7 +36,7 @@ public class ConfigFetcherWorker extends Worker {
 
         String content = null;
         try {
-            content = run("https://cdn.stroeerdigitalgroup.de/sdk/live/t-online/config.json");
+            content = getConfigJson("https://cdn.stroeerdigitalgroup.de/sdk/live/t-online/config.json");
             editor.putString(mContext.getString(R.string.external_config_content_key), content);
             editor.apply();
 
@@ -47,7 +47,7 @@ public class ConfigFetcherWorker extends Worker {
         }
     }
 
-    private String run(String url) throws IOException {
+    private String getConfigJson(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
